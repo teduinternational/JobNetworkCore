@@ -47,7 +47,7 @@ namespace ELearningCore
             // Add framework services.
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("AppDbConnection"),
-                b => b.MigrationsAssembly("ShoppingCore.Data.EF")));
+                b => b.MigrationsAssembly("ELearning.Data.EF")));
 
             services.AddIdentity<AppUser, IdentityRole>()
                .AddEntityFrameworkStores<AppDbContext>()
