@@ -1,4 +1,5 @@
-﻿using JobNetworkCore.Infrastructure.Enums;
+﻿using JobNetworkCore.Data.Interfaces;
+using JobNetworkCore.Infrastructure.Enums;
 using JobNetworkCore.Infrastructure.Interfaces;
 using JobNetworkCore.Infrastructure.SharedKernel;
 using Microsoft.EntityFrameworkCore;

@@ -64,5 +64,25 @@ namespace JobNetworkCore.Data.EF
         }
 
         public DbSet<Language> Languages { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+
+        public DbSet<Candidate> Candidates { get; set; }
+
+        public DbSet<CandidateResume> CandidateResumes { get; set; }
+
+        public DbSet<ConfigParam> ConfigParams { get; set; }
+        public DbSet<Employer> Employers { get; set; }
+
+        public DbSet<Job> Jobs { get; set; }
+
+        public DbSet<JobLocation> JobLocations { get; set; }
+        public DbSet<JobTechnology> JobTechnologys { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<SearchHistory> SearchHistories { get; set; }
+
+        public DbSet<Technology> Technologies { get; set; }
+
+
+
     }
 }

@@ -7,18 +7,14 @@ using JobNetworkCore.Infrastructure.Enums;
 
 namespace JobNetworkCore.Data.Entities
 {
-    public class ConfigParam : DomainEntity<string>, ISwitchable
+    public class Technology : DomainEntity<string>, IHasSeoMetaData, ISortable, ISwitchable
     {
         public string Name { get; set; }
-
-        public string Value1 { get; set; }
-        public int? Value2 { get; set; }
-
-        public bool? Value3 { get; set; }
-
-        public DateTime? Value4 { get; set; }
-
-        public decimal? Value5 { get; set; }
         public Status Status { get; set; }
+        public string SeoPageTitle { get; set; }
+        public string SeoAlias { get; set; }
+        public string SeoKeywords { get; set; }
+        public string SeoDescription { get; set; }
+        public int SortOrder { get; set; }
     }
 }

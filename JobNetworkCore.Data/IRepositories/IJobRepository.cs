@@ -6,7 +6,7 @@ using System.Text;
 
 namespace JobNetworkCore.Data.IRepositories
 {
-    public interface IQuestionRepository : IRepository<Question, int>
+    public interface IJobRepository : IRepository<Job, int>
     {
     }
 

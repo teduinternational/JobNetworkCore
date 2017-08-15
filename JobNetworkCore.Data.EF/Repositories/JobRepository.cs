@@ -6,9 +6,9 @@ using System.Text;
 
 namespace JobNetworkCore.Data.EF.Repositories
 {
-    public class QuestionRepository : EFRepository<Question, int>, IQuestionRepository
+    public class JobRepository : EFRepository<Job, int>, IJobRepository
     {
-        public QuestionRepository(AppDbContext dbContext) : base(dbContext)
+        public JobRepository(AppDbContext dbContext) : base(dbContext)
         {
         }
     }
